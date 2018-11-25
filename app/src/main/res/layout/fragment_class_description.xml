@@ -1,0 +1,174 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="com.lifehackinnovations.gymquest.myapplication.Fragments.ClassDescriptionFragment">
+
+    <data>
+
+        <variable
+            name="classNameText"
+            type="String" />
+
+        <variable
+            name="classDetailsText"
+            type="String" />
+
+        <variable
+            name="buttonText"
+            type="String" />
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        tools:background="@color/appBackgroundColor">
+
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/gym_quest_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight=".5"
+                android:fontFamily="@font/garamond_bold"
+                android:text="USER NAME"
+                android:textAlignment="center"
+                android:textColor="@color/fontColor"
+                android:textSize="40sp" />
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/options_view"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/class_art_view"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:background="#554943"
+                                android:fontFamily="@font/garamond_bold"
+                                android:paddingTop="5dp"
+                                android:text="CLASS ART"
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="25sp" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_above="@+id/logout_view">
+
+                                <include
+                                    layout="@layout/class_details_style"
+                                    bind:classNameText="@{`MERCENARY`}"
+                                    bind:classDetailsText="@{`CLASS DESCRIPTION GOES HERE\n\nBlah.. blah..`}"/>
+
+                                <include
+                                    android:id="@+id/select_class_button"
+                                    layout="@layout/option_button_style"
+                                    bind:buttonText="@{`SELECT`}" />
+
+                                <include
+                                    android:id="@+id/black_button"
+                                    layout="@layout/option_button_style"
+                                    bind:buttonText="@{`BACK`}" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/logout_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_alignParentBottom="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/log_out"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:paddingTop="5dp"
+                                    android:text="LOG OFF"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="25sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="bottom"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/lettergothicstd"
+                                    android:gravity="bottom|end"
+                                    android:text="GymQuest v0.0.0"
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

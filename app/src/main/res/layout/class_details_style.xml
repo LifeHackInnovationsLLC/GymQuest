@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="classNameText"
+            type="String" />
+
+        <variable
+            name="classDetailsText"
+            type="String" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/view_border"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:src="@drawable/class_details_border" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/garamond_bold"
+                android:gravity="center|center_horizontal"
+                android:text="@{classNameText}"
+                android:textAlignment="center"
+                android:textColor="@color/fontColor"
+                android:textSize="18sp"
+                tools:text="MERCENARY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/garamond_bold"
+                android:gravity="center|center_horizontal"
+                android:paddingTop="15dp"
+                android:text="@{classDetailsText}"
+                android:textAlignment="viewStart"
+                android:textColor="@color/fontColor"
+                android:textSize="14sp"
+                tools:text="CLASS DESCRIPTION GOES HERE\n\nBlah.. blah.." />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>
