@@ -23,17 +23,17 @@
             android:src="@drawable/option_button" />
 
         <TextView
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:fontFamily="@font/garamond_bold"
-            android:textAlignment="center"
             android:gravity="center|center_horizontal"
-            tools:text="INVENTORY"
             android:text="@{buttonText}"
+            android:textAlignment="center"
             android:textColor="@color/fontColor"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:text="INVENTORY" />
 
 
     </RelativeLayout>
