@@ -5,7 +5,6 @@
     tools:context="com.lifehackinnovations.gymquest.myapplication.Fragments.SelectYourTrainingFragment">
 
     <data>
-
         <variable
             name="buttonText"
             type="String" />
@@ -47,91 +46,96 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".5">
-            <TextView
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/garamond_bold"
-                android:text="SELECT YOUR TRAINING STYLE"
-                android:textAlignment="center"
-                android:textColor="@color/fontColor"
-                android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/garamond_bold"
+                    android:text="SELECT YOUR TRAINING STYLE"
+                    android:textAlignment="center"
+                    android:textColor="@color/fontColor"
+                    android:textSize="22sp" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="5">
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="400dp"
+                <ScrollView
                     android:layout_above="@+id/options_view"
-                    android:orientation="vertical">
-
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
                     <LinearLayout
-                        android:id="@+id/class_selection_buttons_view"
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <LinearLayout
-                            android:layout_margin="10dp"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/class_selection_buttons_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
                             android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:orientation="horizontal">
 
-                            <include
-                                layout="@layout/button_select_training_style"
-                                bind:buttonText="@{`FIGHTER`}" />
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
 
-                            <include
-                                layout="@layout/button_select_training_style"
-                                bind:buttonText="@{`ROUGE`}" />
+                                <include
+                                    layout="@layout/button_select_training_style"
+                                    bind:buttonText="@{`FIGHTER`}" />
 
-                            <include
-                                layout="@layout/button_select_training_style"
-                                bind:buttonText="@{`SOLDIER`}" />
+                                <include
+                                    layout="@layout/button_select_training_style"
+                                    bind:buttonText="@{`ROUGE`}" />
 
-                            <include
-                                layout="@layout/button_select_training_style"
-                                bind:buttonText="@{`NOMAD`}" />
+                                <include
+                                    layout="@layout/button_select_training_style"
+                                    bind:buttonText="@{`SOLDIER`}" />
+
+                                <include
+                                    layout="@layout/button_select_training_style"
+                                    bind:buttonText="@{`NOMAD`}" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <include
+                                    layout="@layout/button_select_training_style"
+                                    bind:buttonText="@{`BERSERKER`}" />
+
+                                <include
+                                    layout="@layout/button_select_training_style"
+                                    bind:buttonText="@{`MONK`}" />
+
+                                <include
+                                    layout="@layout/button_select_training_style"
+                                    bind:buttonText="@{`BARD`}" />
+
+                                <include
+                                    layout="@layout/button_select_training_style"
+                                    bind:buttonText="@{`MERCENARY`}" />
+                            </LinearLayout>
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_margin="10dp"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <include
-                                layout="@layout/button_select_training_style"
-                                bind:buttonText="@{`BERSERKER`}" />
-
-                            <include
-                                layout="@layout/button_select_training_style"
-                                bind:buttonText="@{`MONK`}" />
-
-                            <include
-                                layout="@layout/button_select_training_style"
-                                bind:buttonText="@{`BARD`}" />
-
-                            <include
-                                layout="@layout/button_select_training_style"
-                                bind:buttonText="@{`MERCENARY`}" />
-                        </LinearLayout>
-
 
                     </LinearLayout>
-
-                </LinearLayout>
+                </ScrollView>
 
                 <LinearLayout
                     android:id="@+id/options_view"
@@ -153,10 +157,12 @@
                             android:orientation="vertical">
 
                             <include
+                                android:id="@+id/theShopId"
                                 layout="@layout/option_button_style"
                                 bind:buttonText="@{`SHOP`}" />
 
                             <include
+                                android:id="@+id/statisticsId"
                                 layout="@layout/option_button_style"
                                 bind:buttonText="@{`STATISTICS`}" />
 
@@ -169,10 +175,12 @@
                             android:orientation="vertical">
 
                             <include
+                                android:id="@+id/inventoryId"
                                 layout="@layout/option_button_style"
                                 bind:buttonText="@{`INVENTORY`}" />
 
                             <include
+                                android:id="@+id/settingId"
                                 layout="@layout/option_button_style"
                                 bind:buttonText="@{`SETTINGS`}" />
 

@@ -33,9 +33,29 @@ class SelectYourTrainingFragment : Fragment() {
         var myView : View  = binding.root
 
         myView.class_selection_buttons_view.setOnClickListener { view ->
-            val classDescriptionFragment = ClassDescriptionFragment();
+            val classDescriptionFragment = ClassDescriptionFragment()
             Log.d("test","test");
             (activity as MainActivity).replaceFragment(classDescriptionFragment, R.id.fragment_container)
+        }
+
+        myView.inventoryId.setOnClickListener { view ->
+            val inventoryFragment = InventoryFragment()
+            (activity as MainActivity).replaceFragment(inventoryFragment, R.id.fragment_container)
+        }
+
+        myView.theShopId.setOnClickListener { view ->
+            val theShopFragment = TheShopFragment()
+            (activity as MainActivity).replaceFragment(theShopFragment, R.id.fragment_container)
+        }
+
+        myView.statisticsId.setOnClickListener { view ->
+            val statisticsFragment = StatisticsFragment()
+            (activity as MainActivity).replaceFragment(statisticsFragment, R.id.fragment_container)
+        }
+
+        myView.settingId.setOnClickListener { view ->
+            val settingFragment = SettingFragment()
+            (activity as MainActivity).replaceFragment(settingFragment, R.id.fragment_container)
         }
 
         myView.log_out.setOnClickListener { view ->
