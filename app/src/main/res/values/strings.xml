@@ -4,4 +4,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gym_bag">GYM BAG</string>
+    <string name="the_shop">THE SHOP</string>
+    <string name="statistics">STATISTICS</string>
+    <string name="setting_text">SETTING</string>
 </resources>
