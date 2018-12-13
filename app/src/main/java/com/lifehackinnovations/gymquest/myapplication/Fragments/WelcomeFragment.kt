@@ -29,8 +29,26 @@ class WelcomeFragment : Fragment() {
 
         view.login_button.setOnClickListener { view ->
             val welcomeBackFragment = WelcomeBackFragment();
-            Log.d("test","test");
             (activity as MainActivity).replaceFragment(welcomeBackFragment, R.id.fragment_container)
+
+        }
+
+        view.register_facebook_button.setOnClickListener { view ->
+            val registrationFragment = RegistrationFragment();
+            (activity as MainActivity).replaceFragment(registrationFragment, R.id.fragment_container)
+
+        }
+
+        view.register_twitter_button.setOnClickListener { view ->
+            val registrationFragment = RegistrationFragment();
+            (activity as MainActivity).replaceFragment(registrationFragment, R.id.fragment_container)
+
+        }
+
+        view.register_google_button.setOnClickListener { view ->
+            val registrationFragment = RegistrationFragment();
+            (activity as MainActivity).replaceFragment(registrationFragment, R.id.fragment_container)
+
         }
 
         return view
