@@ -16,6 +16,8 @@ class StatisticsFragment: Fragment() {
         val binding: FragmentStatisticsBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_statistics, container, false)
         val myView: View = binding.root
 
+
+
         return myView
     }
 }
