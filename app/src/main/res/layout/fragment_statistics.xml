@@ -242,6 +242,7 @@
                 bind:buttonText="@{`ACHIEVEMENTS`}" />
 
             <include
+                android:id="@+id/select_class_button"
                 layout="@layout/option_button_style"
                 bind:buttonText="@{`SELECT CLASS`}" />
 
