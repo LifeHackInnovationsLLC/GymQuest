@@ -8,4 +8,11 @@
     <string name="the_shop">THE SHOP</string>
     <string name="statistics">STATISTICS</string>
     <string name="setting_text">SETTING</string>
+    <string name="username">USERNAME</string>
+    <string name="timer_setting">TIMER SETTING</string>
+    <string name="default_number_of_sets">Default Number of Sets</string>
+    <string name="default_time_for_sets">Default Time For Sets</string>
+    <string name="default_exercise_goals">Default Exercise Goals</string>
+    <string name="gymquest_theme">GymQuest Theme</string>
+    <string name="custom_encounter_builder">CUSTOM ENCOUNTER BUILDER</string>
 </resources>
