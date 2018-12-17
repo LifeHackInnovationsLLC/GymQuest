@@ -5,6 +5,7 @@
     tools:context="com.lifehackinnovations.gymquest.myapplication.Fragments.SettingFragment">
 
     <data>
+
         <variable
             name="buttonText"
             type="String" />
@@ -31,21 +32,80 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight=".5"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/garamond_bold"
                 android:text="@string/setting_text"
                 android:textAlignment="center"
                 android:textColor="@color/fontColor"
                 android:textSize="20sp" />
 
-            <include
-                android:id="@+id/settingBackId"
-                layout="@layout/option_button_style"
-                bind:buttonText="@{`BACK`}" />
+            <TextView
+                android:id="@+id/settingUsernameId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/garamond_bold"
+                android:text="@string/username"
+                android:textAlignment="center"
+                android:textColor="@color/fontColor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/defaultNumberId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lettergothicstd"
+                android:text="@string/default_number_of_sets"
+                android:textColor="@color/fontColor"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lettergothicstd"
+                android:text="@string/default_time_for_sets"
+                android:textColor="@color/fontColor"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lettergothicstd"
+                android:text="@string/default_exercise_goals"
+                android:textColor="@color/fontColor"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lettergothicstd"
+                android:text="@string/gymquest_theme"
+                android:textColor="@color/fontColor"
+                android:layout_marginStart="8dp"
+                android:textSize="14sp" />
 
         </LinearLayout>
+
+        <include
+            android:id="@+id/managePersonalId"
+            layout="@layout/option_button_style"
+            bind:buttonText="@{`MANAGE PERSONAL RECORDS`}" />
+
+        <include
+            android:id="@+id/mangeCustomId"
+            layout="@layout/option_button_style"
+            bind:buttonText="@{`MANAGE CUSTOM EXPERIENCE`}" />
+
+        <include
+            android:id="@+id/settingBackId"
+            layout="@layout/option_button_style"
+            bind:buttonText="@{`BACK`}" />
 
 
     </LinearLayout>
