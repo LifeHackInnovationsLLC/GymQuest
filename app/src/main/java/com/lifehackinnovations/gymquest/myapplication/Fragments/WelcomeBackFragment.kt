@@ -22,12 +22,9 @@ class WelcomeBackFragment : Fragment() {
         // Inflate the layout for this fragment
 
         val view: View = inflater!!.inflate(R.layout.fragment_welcome_back, container, false)
-
-
-
         view.welcome_back_view.setOnClickListener { view ->
             val selectYourTrainingFragment = SelectYourTrainingFragment();
-            Log.d("test","test");
+            Log.d("test", "test");
             (activity as MainActivity).replaceFragment(selectYourTrainingFragment, R.id.fragment_container)
         }
 

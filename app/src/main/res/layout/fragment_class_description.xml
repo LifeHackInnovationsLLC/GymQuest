@@ -115,7 +115,7 @@
                                 <include
                                     layout="@layout/class_details_style"
                                     bind:classNameText="@{`MERCENARY`}"
-                                    bind:classDetailsText="@{`CLASS DESCRIPTION GOES HERE\n\nBlah.. blah..`}"/>
+                                    bind:classDetailsText="@{`CLASS DESCRIPTION GOES HERE\n\nBlah.. blah..`}" />
 
                                 <include
                                     android:id="@+id/select_class_button"

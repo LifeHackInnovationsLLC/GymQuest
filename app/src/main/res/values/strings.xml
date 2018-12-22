@@ -15,4 +15,8 @@
     <string name="default_exercise_goals">Default Exercise Goals</string>
     <string name="gymquest_theme">GymQuest Theme</string>
     <string name="custom_encounter_builder">CUSTOM ENCOUNTER BUILDER</string>
+    <string name="purchase_chests">PURCHASE CHESTS</string>
+    <string name="item_description">ITEM DESCRIPTION</string>
+    <string name="achievements">ACHIEVEMENTS</string>
+    <string name="legendary">LEGENDARY</string>
 </resources>

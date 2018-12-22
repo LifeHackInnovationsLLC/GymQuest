@@ -29,12 +29,12 @@ class SelectYourTrainingFragment : Fragment() {
         //DataBindingUtil.inflate: View rootView = DataBindingUtil.inflate(inflater, R.layout.fragment_select_your_training, container, false).getRoot()
 //        val listItemBinding = DataBindingUtil.inflate(layoutInflater, R.layout.fragment_select_your_training, viewGroup, false)
 
-        var binding : FragmentSelectYourTrainingBinding = DataBindingUtil.inflate(inflater , R.layout.fragment_select_your_training,container , false)
-        var myView : View  = binding.root
+        var binding: FragmentSelectYourTrainingBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_select_your_training, container, false)
+        var myView: View = binding.root
 
         myView.class_selection_buttons_view.setOnClickListener { view ->
             val classDescriptionFragment = ClassDescriptionFragment()
-            Log.d("test","test");
+            Log.d("test", "test");
             (activity as MainActivity).replaceFragment(classDescriptionFragment, R.id.fragment_container)
         }
 

@@ -5,6 +5,7 @@
     tools:context="com.lifehackinnovations.gymquest.myapplication.Fragments.PersonalRecordsFragment">
 
     <data>
+
         <variable
             name="buttonText"
             type="String" />

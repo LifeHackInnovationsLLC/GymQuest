@@ -7,16 +7,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.lifehackinnovations.gymquest.myapplication.R
-import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentCustomEncouterBinding
-import kotlinx.android.synthetic.main.fragment_custom_encouter.view.*
+import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentAchievementsBinding
+import kotlinx.android.synthetic.main.fragment_achievements.view.*
 
-class CustomEncounterFragment : Fragment() {
+class AchievementsFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val binding: FragmentCustomEncouterBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_custom_encouter, container, false)
+
+        val binding: FragmentAchievementsBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_achievements, container, false)
         val myView: View = binding.root
 
-        myView.customEncounterBackId.setOnClickListener {
+        myView.achievementBackButtonId.setOnClickListener {
             activity!!.onBackPressed()
         }
 

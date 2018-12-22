@@ -11,244 +11,275 @@
             type="String" />
     </data>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/transparent"
-        android:orientation="vertical"
         tools:background="@color/appBackgroundColor">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:src="@drawable/gym_quest_logo" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/backLayoutId"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            tools:background="@color/appBackgroundColor">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/gym_quest_logo" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/garamond_bold"
+                            android:text="@string/statistics"
+                            android:textAlignment="center"
+                            android:textColor="@color/fontColor"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/garamond_bold"
+                            android:text="@string/username"
+                            android:textAlignment="center"
+                            android:textColor="@color/fontColor"
+                            android:textSize="50sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="30dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/lettergothicstd"
+                                    android:text="Favorite Class:"
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:text="STRENGTH"
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:text="AGILITY"
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:text="SPEED"
+
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:text="ENDURANCE"
+
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:text="GYM QUESTS"
+
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:text="ENCOUNTERS"
+
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:text="ACHIEVEMENTS"
+
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/lettergothicstd"
+                                    android:gravity="right"
+                                    android:text="Fighter Lvl 73"
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:gravity="right"
+                                    android:text="237"
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:gravity="right"
+                                    android:text="487"
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:gravity="right"
+                                    android:text="372"
+
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:gravity="right"
+                                    android:text="830"
+
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:gravity="right"
+                                    android:text="411"
+
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:gravity="right"
+                                    android:text="4,210"
+
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="@font/garamond_bold"
+                                    android:gravity="right"
+                                    android:text="27"
+
+                                    android:textColor="@color/fontColor"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/backLayoutId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/garamond_bold"
-                android:text="@string/statistics"
-                android:textAlignment="center"
-                android:textColor="@color/fontColor"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/garamond_bold"
-                android:text="USER NAME"
-                android:textAlignment="center"
-                android:textColor="@color/fontColor"
-                android:textSize="50sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="30dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/lettergothicstd"
-                        android:text="Favorite Class:"
-                        android:textColor="@color/fontColor"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="STRENGTH"
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="AGILITY"
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="SPEED"
-
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="ENDURANCE"
-
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="GYM QUESTS"
-
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="ENCOUNTERS"
-
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="ACHIEVEMENTS"
-
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/lettergothicstd"
-                        android:text="Fighter Lvl 73"
-                        android:gravity="right"
-                        android:textColor="@color/fontColor"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:gravity="right"
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="237"
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:gravity="right"
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="487"
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:gravity="right"
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="372"
-
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:gravity="right"
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="830"
-
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:gravity="right"
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="411"
-
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:gravity="right"
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="4,210"
-
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:gravity="right"
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="@font/garamond_bold"
-                        android:text="27"
-
-                        android:textColor="@color/fontColor"
-                        android:textSize="20sp" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
             <include
+                android:id="@+id/achievementButtonId"
                 layout="@layout/option_button_style"
                 bind:buttonText="@{`ACHIEVEMENTS`}" />
 
             <include
-                android:id="@+id/select_class_button"
+                android:id="@+id/selectClassButtonId"
                 layout="@layout/option_button_style"
                 bind:buttonText="@{`SELECT CLASS`}" />
 
         </LinearLayout>
 
-
-    </LinearLayout>
+    </RelativeLayout>
 
 </layout>

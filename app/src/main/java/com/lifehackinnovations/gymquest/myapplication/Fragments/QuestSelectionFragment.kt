@@ -7,8 +7,8 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentQuestSelectionBinding
 import com.lifehackinnovations.gymquest.myapplication.R
+import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentQuestSelectionBinding
 
 // TODO: Rename parameter arguments, choose names that match
 
@@ -22,8 +22,8 @@ class QuestSelectionFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        var binding : FragmentQuestSelectionBinding = DataBindingUtil.inflate(inflater , R.layout.fragment_quest_selection,container , false)
-        var myView : View  = binding.root
+        var binding: FragmentQuestSelectionBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_quest_selection, container, false)
+        var myView: View = binding.root
 
 //        myView.select_class_button.setOnClickListener { view ->
 //            val questSelectionFragment = QuestSelectionFragment();
