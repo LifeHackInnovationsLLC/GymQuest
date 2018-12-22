@@ -47,12 +47,12 @@ class MainActivity : AppCompatActivity() {
     //Fragment Management Functions for Kotlin from
     //https://medium.com/thoughts-overflow/how-to-add-a-fragment-in-kotlin-way-73203c5a450b
     companion object {
-        fun AppCompatActivity.addFragment(fragment: Fragment, frameId: Int){
+        fun AppCompatActivity.addFragment(fragment: Fragment, frameId: Int) {
             supportFragmentManager.inTransaction { add(frameId, fragment) }
         }
 
         fun AppCompatActivity.replaceFragment(fragment: Fragment, frameId: Int) {
-            supportFragmentManager.inTransaction{replace(frameId, fragment)}
+            supportFragmentManager.inTransaction { replace(frameId, fragment) }
         }
 
         fun AppCompatActivity.goBackOneFragment() {

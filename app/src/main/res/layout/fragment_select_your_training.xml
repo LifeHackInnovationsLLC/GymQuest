@@ -5,6 +5,7 @@
     tools:context="com.lifehackinnovations.gymquest.myapplication.Fragments.SelectYourTrainingFragment">
 
     <data>
+
         <variable
             name="buttonText"
             type="String" />
@@ -69,6 +70,7 @@
                     android:layout_above="@+id/options_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
