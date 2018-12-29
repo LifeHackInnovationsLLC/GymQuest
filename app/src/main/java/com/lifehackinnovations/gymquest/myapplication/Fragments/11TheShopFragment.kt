@@ -10,7 +10,7 @@ import com.lifehackinnovations.gymquest.myapplication.R
 import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentTheShopBinding
 import kotlinx.android.synthetic.main.fragment_the_shop.view.*
 
-class TheShopFragment : Fragment() {
+class `11TheShopFragment` : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {

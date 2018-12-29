@@ -12,7 +12,7 @@ import com.lifehackinnovations.gymquest.myapplication.R
 import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentSettingBinding
 import kotlinx.android.synthetic.main.fragment_setting.view.*
 
-class SettingFragment : Fragment() {
+class `13SettingFragment` : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding: FragmentSettingBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_setting, container, false)
@@ -23,17 +23,17 @@ class SettingFragment : Fragment() {
         }
 
         myView.managePersonalId.setOnClickListener {
-            val personalRecordsFragment = PersonalRecordsFragment();
+            val personalRecordsFragment = `17PersonalRecordsFragment`();
             (activity as MainActivity).replaceFragment(personalRecordsFragment, R.id.fragment_container)
         }
 
         myView.defaultNumberId.setOnClickListener {
-            val timerSettingFragment = TimerSettingFragment();
+            val timerSettingFragment = `19TimerSettingFragment`();
             (activity as MainActivity).replaceFragment(timerSettingFragment, R.id.fragment_container)
         }
 
         myView.mangeCustomId.setOnClickListener {
-            val customEncounterFragment = CustomEncounterFragment();
+            val customEncounterFragment = `15CustomEncounterFragment`();
             (activity as MainActivity).replaceFragment(customEncounterFragment, R.id.fragment_container)
         }
 

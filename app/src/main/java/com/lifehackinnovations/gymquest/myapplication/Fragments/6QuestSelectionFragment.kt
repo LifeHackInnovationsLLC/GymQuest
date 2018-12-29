@@ -7,8 +7,11 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.lifehackinnovations.gymquest.myapplication.MainActivity
+import com.lifehackinnovations.gymquest.myapplication.MainActivity.Companion.goBackOneFragment
 import com.lifehackinnovations.gymquest.myapplication.R
 import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentQuestSelectionBinding
+import kotlinx.android.synthetic.main.fragment_class_description.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 
@@ -17,7 +20,7 @@ import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentQuestS
  * A simple [Fragment] subclass.
  *
  */
-class QuestSelectionFragment : Fragment() {
+class `6QuestSelectionFragment` : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -25,8 +28,12 @@ class QuestSelectionFragment : Fragment() {
         var binding: FragmentQuestSelectionBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_quest_selection, container, false)
         var myView: View = binding.root
 
+        myView.back_button.setOnClickListener { view ->
+            (activity as MainActivity).goBackOneFragment()
+        }
+
 //        myView.select_class_button.setOnClickListener { view ->
-//            val questSelectionFragment = QuestSelectionFragment();
+//            val questSelectionFragment = ``6QuestSelectionFragment``();
 //            Log.d("test","test");
 //            (activity as MainActivity).replaceFragment(questSelectionFragment, R.id.fragment_container)
 //        }

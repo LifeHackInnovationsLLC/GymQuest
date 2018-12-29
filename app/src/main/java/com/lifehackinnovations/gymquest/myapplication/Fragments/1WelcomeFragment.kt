@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_welcome.view.*
 /**
  * A simple [Fragment] subclass.
  */
-class WelcomeFragment : Fragment() {
+class `1WelcomeFragment` : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -27,25 +27,25 @@ class WelcomeFragment : Fragment() {
 
 
         view.login_button.setOnClickListener { view ->
-            val welcomeBackFragment = WelcomeBackFragment();
+            val welcomeBackFragment = `2WelcomeBackFragment`();
             (activity as MainActivity).replaceFragment(welcomeBackFragment, R.id.fragment_container)
 
         }
 
         view.register_facebook_button.setOnClickListener { view ->
-            val registrationFragment = RegistrationFragment();
+            val registrationFragment = `8RegistrationFragment`();
             (activity as MainActivity).replaceFragment(registrationFragment, R.id.fragment_container)
 
         }
 
         view.register_twitter_button.setOnClickListener { view ->
-            val registrationFragment = RegistrationFragment();
+            val registrationFragment = `8RegistrationFragment`();
             (activity as MainActivity).replaceFragment(registrationFragment, R.id.fragment_container)
 
         }
 
         view.register_google_button.setOnClickListener { view ->
-            val registrationFragment = RegistrationFragment();
+            val registrationFragment = `8RegistrationFragment`();
             (activity as MainActivity).replaceFragment(registrationFragment, R.id.fragment_container)
 
         }

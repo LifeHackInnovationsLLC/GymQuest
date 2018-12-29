@@ -10,7 +10,7 @@ import com.lifehackinnovations.gymquest.myapplication.R
 /**
  * A simple [Fragment] subclass.
  */
-class RegistrationFragment : Fragment() {
+class `8RegistrationFragment` : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,

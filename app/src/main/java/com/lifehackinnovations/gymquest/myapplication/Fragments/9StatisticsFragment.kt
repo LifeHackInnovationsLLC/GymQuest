@@ -12,7 +12,7 @@ import com.lifehackinnovations.gymquest.myapplication.R
 import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentStatisticsBinding
 import kotlinx.android.synthetic.main.fragment_statistics.view.*
 
-class StatisticsFragment : Fragment() {
+class `9StatisticsFragment` : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
@@ -20,12 +20,12 @@ class StatisticsFragment : Fragment() {
         val myView: View = binding.root
 
         myView.selectClassButtonId.setOnClickListener { view ->
-            val selectYourTrainingFragment = SelectYourTrainingFragment();
+            val selectYourTrainingFragment = `3SelectYourTrainingFragment`();
             (activity as MainActivity).replaceFragment(selectYourTrainingFragment, R.id.fragment_container)
         }
 
         myView.achievementButtonId.setOnClickListener { view ->
-            val achievementsFragment = AchievementsFragment();
+            val achievementsFragment = `12AchievementsFragment`();
             (activity as MainActivity).replaceFragment(achievementsFragment, R.id.fragment_container)
         }
 

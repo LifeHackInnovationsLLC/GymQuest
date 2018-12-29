@@ -1,7 +1,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:bind="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Fragments.QuestSelectionFragment">
+    tools:context=".Fragments.`5QuestSelectionFragment`">
 
 
     <data>
@@ -10,6 +10,10 @@
             name="buttonText"
             type="String" />
     </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -184,6 +188,119 @@
             bind:layout_constraintStart_toStartOf="parent"
             bind:layout_constraintTop_toBottomOf="@+id/quest_builder_button" />
 
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="351dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            bind:layout_constraintEnd_toEndOf="parent"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toBottomOf="@+id/textView7">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#ffffff"
+                    android:checked="true"
+                    android:text="ALL"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#ffffff"
+                    android:checked="false"
+                    android:text="NOVICE"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#ffffff"
+                    android:checked="false"
+                    android:text="INTERMEDIATE"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#ffffff"
+                    android:checked="false"
+                    android:text="ADVANCED"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="406dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/class_details_border"
+            bind:layout_constraintBottom_toTopOf="@+id/back_button"
+            bind:layout_constraintEnd_toEndOf="parent"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            bind:layout_constraintBottom_toTopOf="@+id/back_button"
+            bind:layout_constraintEnd_toEndOf="parent"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <include
+                layout="@layout/quest_details_style"
+                bind:questLevelText="@{`NOVICE`}"
+                bind:questNameText="@{`CLASS QUEST 01 (ARMS)`}" />
+
+            <include
+                layout="@layout/quest_details_style"
+                bind:questLevelText="@{`NOVICE`}"
+                bind:questNameText="@{`CLASS QUEST 01 (ARMS)`}" />
+
+            <include
+                layout="@layout/quest_details_style"
+                bind:questLevelText="@{`NOVICE`}"
+                bind:questNameText="@{`CLASS QUEST 01 (ARMS)`}" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/back_button"
+            layout="@layout/option_button_style"
+            android:layout_width="225dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            bind:buttonText="@{`BACK`}"
+            bind:layout_constraintBottom_toBottomOf="parent"
+            bind:layout_constraintEnd_toEndOf="parent"
+            bind:layout_constraintStart_toStartOf="parent" />
 
     </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
 </layout>

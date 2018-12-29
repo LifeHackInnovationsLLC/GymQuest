@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="questNameText"
+            type="String" />
+
+        <variable
+            name="questLevelText"
+            type="String" />
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9">
+
+        <ImageView
+            android:id="@+id/view_border"
+            android:layout_width="294dp"
+            android:layout_height="59dp"
+            android:src="@drawable/quest_details_button"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/garamond_bold"
+            android:text="@{questNameText}"
+            android:textColor="@color/fontColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="CLASS QUEST 01 (ARMS)" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="@font/garamond_bold"
+            android:gravity="center|center_horizontal"
+
+            android:text="LEVEL: "
+            android:textAlignment="viewStart"
+            android:textColor="@color/fontColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_border"
+            app:layout_constraintEnd_toStartOf="@+id/textView10"
+            app:layout_constraintHorizontal_bias="0.945"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="@font/garamond_bold"
+            android:gravity="center|center_horizontal"
+            android:text="@{questLevelText}"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="NOVICE"
+            tools:textColor="" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

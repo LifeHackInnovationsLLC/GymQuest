@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import com.lifehackinnovations.gymquest.myapplication.Fragments.WelcomeFragment
+import com.lifehackinnovations.gymquest.myapplication.Fragments.`1WelcomeFragment`
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
 //                    .setAction("Action", null).show()
 //        }
 
-//        val welcomeFragment = WelcomeFragment();
+//        val welcomeFragment = `1WelcomeFragment`();
 //        addFragment(welcomeFragment, R.id.fragment_container)
-        val welcomeFragment = WelcomeFragment();
+        val welcomeFragment = `1WelcomeFragment`();
         addFragment(welcomeFragment, R.id.fragment_container)
 
     }
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
 
         fun AppCompatActivity.logOut() {
             supportFragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-            val welcomeFragment = WelcomeFragment();
+            val welcomeFragment = `1WelcomeFragment`();
             addFragment(welcomeFragment, R.id.fragment_container)
         }
 

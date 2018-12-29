@@ -10,7 +10,7 @@ import com.lifehackinnovations.gymquest.myapplication.R
 import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentInventoryBinding
 import kotlinx.android.synthetic.main.fragment_inventory.view.*
 
-class InventoryFragment : Fragment() {
+class `10InventoryFragment` : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {

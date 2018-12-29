@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_welcome_back.view.*
 /**
  * A simple [Fragment] subclass.
  */
-class WelcomeBackFragment : Fragment() {
+class `2WelcomeBackFragment` : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -23,7 +23,7 @@ class WelcomeBackFragment : Fragment() {
 
         val view: View = inflater!!.inflate(R.layout.fragment_welcome_back, container, false)
         view.welcome_back_view.setOnClickListener { view ->
-            val selectYourTrainingFragment = SelectYourTrainingFragment();
+            val selectYourTrainingFragment = `3SelectYourTrainingFragment`();
             Log.d("test", "test");
             (activity as MainActivity).replaceFragment(selectYourTrainingFragment, R.id.fragment_container)
         }
