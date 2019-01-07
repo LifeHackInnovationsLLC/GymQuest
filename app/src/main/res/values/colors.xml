@@ -7,4 +7,5 @@
     <color name="fontColor">#F6881C</color>
     <color name="appBackgroundColor">@android:color/black</color>
     <color name="borderColor">#4A4A4A</color>
+    <color name="whiteColor">#FFFFFF</color>
 </resources>
