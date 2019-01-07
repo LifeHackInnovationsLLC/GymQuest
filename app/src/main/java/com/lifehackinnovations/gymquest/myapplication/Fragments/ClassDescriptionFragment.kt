@@ -30,9 +30,9 @@ class ClassDescriptionFragment : Fragment() {
         var myView: View = binding.root
 
         myView.select_class_button.setOnClickListener { view ->
-            val questSelectionFragment = QuestSelectionFragment();
+            val journeyDifficultyQuestFragment = JourneyDifficultyQuestFragment();
             Log.d("test", "test");
-            (activity as MainActivity).replaceFragment(questSelectionFragment, R.id.fragment_container)
+            (activity as MainActivity).replaceFragment(journeyDifficultyQuestFragment, R.id.fragment_container)
         }
 
         myView.log_out.setOnClickListener { view ->
