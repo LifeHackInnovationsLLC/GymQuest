@@ -19,4 +19,5 @@
     <string name="item_description">ITEM DESCRIPTION</string>
     <string name="achievements">ACHIEVEMENTS</string>
     <string name="legendary">LEGENDARY</string>
+    <string name="journey_difficulty">JOURNEY DIFFICULTY:</string>
 </resources>

@@ -29,7 +29,7 @@
             android:fontFamily="@font/garamond_bold"
             android:textAlignment="center"
             android:gravity="center|center_horizontal"
-            tools:text="RANDOM QUEST GENERATOR"
+            tools:text="GENERATOR"
             android:text="@{buttonText}"
             android:textColor="@color/fontColor"
             android:textSize="18sp" />
