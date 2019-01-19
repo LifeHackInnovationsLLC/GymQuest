@@ -20,4 +20,9 @@
     <string name="achievements">ACHIEVEMENTS</string>
     <string name="legendary">LEGENDARY</string>
     <string name="journey_difficulty">JOURNEY DIFFICULTY:</string>
+    <string name="quest_intensity">QUEST INTENSITY:</string>
+    <string name="time_between_sets">Time between sets</string>
+    <string name="workout_timer_length">Workout timer length</string>
+    <string name="enable_timer_between_sets">Enable timer  between sets?</string>
+    <string name="enable_overall_workout_timer">Enable overall  workout timer?</string>
 </resources>

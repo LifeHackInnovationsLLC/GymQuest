@@ -49,6 +49,59 @@
                 android:textColor="@color/fontColor"
                 android:textSize="30sp" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    android:fontFamily="@font/lettergothicstd"
+                    android:text="@string/default_time_for_sets"
+                    android:textColor="@color/fontColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    android:fontFamily="@font/lettergothicstd"
+                    android:text="@string/enable_timer_between_sets"
+                    android:textColor="@color/fontColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    android:fontFamily="@font/lettergothicstd"
+                    android:text="@string/time_between_sets"
+                    android:textColor="@color/fontColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    android:fontFamily="@font/lettergothicstd"
+                    android:text="@string/enable_overall_workout_timer"
+                    android:textColor="@color/fontColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    android:fontFamily="@font/lettergothicstd"
+                    android:text="@string/workout_timer_length"
+                    android:textColor="@color/fontColor"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
         <include
