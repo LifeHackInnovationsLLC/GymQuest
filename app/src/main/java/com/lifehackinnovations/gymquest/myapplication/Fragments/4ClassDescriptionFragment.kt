@@ -21,7 +21,7 @@ import kotlinx.android.synthetic.main.fragment_class_description.view.*
  * A simple [Fragment] subclass.
  *
  */
-class ClassDescriptionFragment : Fragment() {
+class `4ClassDescriptionFragment` : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -30,16 +30,16 @@ class ClassDescriptionFragment : Fragment() {
         var myView: View = binding.root
 
         myView.select_class_button.setOnClickListener { view ->
-            val journeyDifficultyQuestFragment = JourneyDifficultyQuestFragment();
+            val questSelectionFragment = `6QuestSelectionFragment`();
             Log.d("test", "test");
-            (activity as MainActivity).replaceFragment(journeyDifficultyQuestFragment, R.id.fragment_container)
+            (activity as MainActivity).replaceFragment(questSelectionFragment, R.id.fragment_container)
         }
 
         myView.log_out.setOnClickListener { view ->
             (activity as MainActivity).logOut()
         }
 
-        myView.black_button.setOnClickListener { view ->
+        myView.back_button.setOnClickListener { view ->
             (activity as MainActivity).goBackOneFragment()
         }
 

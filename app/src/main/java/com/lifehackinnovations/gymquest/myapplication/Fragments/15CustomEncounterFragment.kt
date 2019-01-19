@@ -7,16 +7,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.lifehackinnovations.gymquest.myapplication.R
-import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentPersonalRecordsBinding
-import kotlinx.android.synthetic.main.fragment_personal_records.view.*
+import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentCustomEncouterBinding
+import kotlinx.android.synthetic.main.fragment_custom_encouter.view.*
 
-class PersonalRecordsFragment : Fragment() {
+class `15CustomEncounterFragment` : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val binding: FragmentPersonalRecordsBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_personal_records, container, false)
+        val binding: FragmentCustomEncouterBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_custom_encouter, container, false)
         val myView: View = binding.root
 
-        myView.personalRecordBackId.setOnClickListener {
+        myView.customEncounterBackId.setOnClickListener {
             activity!!.onBackPressed()
         }
 

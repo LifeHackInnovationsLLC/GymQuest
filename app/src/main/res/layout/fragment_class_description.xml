@@ -2,7 +2,7 @@
     xmlns:bind="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-    tools:context="com.lifehackinnovations.gymquest.myapplication.Fragments.ClassDescriptionFragment">
+    tools:context="com.lifehackinnovations.gymquest.myapplication.Fragments.`4ClassDescriptionFragment`">
 
     <data>
 
@@ -123,7 +123,7 @@
                                     bind:buttonText="@{`SELECT`}" />
 
                                 <include
-                                    android:id="@+id/black_button"
+                                    android:id="@+id/back_button"
                                     layout="@layout/option_button_style"
                                     bind:buttonText="@{`BACK`}" />
                             </LinearLayout>

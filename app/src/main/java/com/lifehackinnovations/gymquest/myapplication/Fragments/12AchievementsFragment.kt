@@ -10,7 +10,7 @@ import com.lifehackinnovations.gymquest.myapplication.R
 import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentAchievementsBinding
 import kotlinx.android.synthetic.main.fragment_achievements.view.*
 
-class AchievementsFragment : Fragment() {
+class `12AchievementsFragment` : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 

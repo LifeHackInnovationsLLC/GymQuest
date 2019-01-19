@@ -6,7 +6,7 @@
     android:background="@android:color/transparent"
     android:orientation="vertical"
     tools:background="@color/appBackgroundColor"
-    tools:context="com.lifehackinnovations.gymquest.myapplication.Fragments.WelcomeBackFragment">
+    tools:context="com.lifehackinnovations.gymquest.myapplication.Fragments.`2WelcomeBackFragment`">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView

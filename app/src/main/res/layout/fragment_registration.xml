@@ -6,7 +6,7 @@
     android:background="@android:color/transparent"
     android:orientation="vertical"
     tools:background="@color/appBackgroundColor"
-    tools:context="com.lifehackinnovations.gymquest.myapplication.Fragments.RegistrationFragment">
+    tools:context="com.lifehackinnovations.gymquest.myapplication.Fragments.`8RegistrationFragment`">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView

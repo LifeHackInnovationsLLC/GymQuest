@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.fragment_select_your_training.view.*
 /**
  * A simple [Fragment] subclass.
  */
-class SelectYourTrainingFragment : Fragment() {
+class `3SelectYourTrainingFragment` : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -33,28 +33,28 @@ class SelectYourTrainingFragment : Fragment() {
         var myView: View = binding.root
 
         myView.class_selection_buttons_view.setOnClickListener { view ->
-            val classDescriptionFragment = ClassDescriptionFragment()
+            val classDescriptionFragment = `4ClassDescriptionFragment`()
             Log.d("test", "test");
             (activity as MainActivity).replaceFragment(classDescriptionFragment, R.id.fragment_container)
         }
 
         myView.inventoryId.setOnClickListener { view ->
-            val inventoryFragment = InventoryFragment()
+            val inventoryFragment = `10InventoryFragment`()
             (activity as MainActivity).replaceFragment(inventoryFragment, R.id.fragment_container)
         }
 
         myView.theShopId.setOnClickListener { view ->
-            val theShopFragment = TheShopFragment()
+            val theShopFragment = `11TheShopFragment`()
             (activity as MainActivity).replaceFragment(theShopFragment, R.id.fragment_container)
         }
 
         myView.statisticsId.setOnClickListener { view ->
-            val statisticsFragment = StatisticsFragment()
+            val statisticsFragment = `9StatisticsFragment`()
             (activity as MainActivity).replaceFragment(statisticsFragment, R.id.fragment_container)
         }
 
         myView.settingId.setOnClickListener { view ->
-            val settingFragment = SettingFragment()
+            val settingFragment = `13SettingFragment`()
             (activity as MainActivity).replaceFragment(settingFragment, R.id.fragment_container)
         }
 

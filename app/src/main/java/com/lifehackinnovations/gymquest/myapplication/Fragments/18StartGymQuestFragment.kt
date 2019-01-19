@@ -30,7 +30,7 @@ class StartGymQuestFragment : Fragment() {
         }
 
         myView.startGymQuestId.setOnClickListener { myView ->
-            val nextEncounterFragment = NextEncounterFragment()
+            val nextEncounterFragment = `14CurrentEncounterFragment`()
             (activity as MainActivity).replaceFragment(nextEncounterFragment, R.id.fragment_container)
         }
 

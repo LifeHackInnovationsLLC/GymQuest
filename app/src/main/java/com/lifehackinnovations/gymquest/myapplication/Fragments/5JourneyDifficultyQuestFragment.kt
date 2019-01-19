@@ -22,9 +22,8 @@ class JourneyDifficultyQuestFragment : Fragment() {
                 container,
                 false)
         var myView: View = binding.root
-
         myView.layoutXpPointId.setOnClickListener { view ->
-            val questSelectionFragment = QuestSelectionFragment();
+            val questSelectionFragment = `6QuestSelectionFragment`();
             (activity as MainActivity).replaceFragment(questSelectionFragment, R.id.fragment_container)
         }
 
