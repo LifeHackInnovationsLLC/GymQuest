@@ -36,9 +36,9 @@ class QuestSelectionFragment : Fragment() {
 //            (activity as MainActivity).logOut()
 //        }
 //
-//        myView.black_button.setOnClickListener { view ->
-//            (activity as MainActivity).goBackOneFragment()
-//        }
+        myView.questButtonBackId.setOnClickListener { view ->
+            (activity as MainActivity).onBackPressed()
+        }
 
         return myView
     }

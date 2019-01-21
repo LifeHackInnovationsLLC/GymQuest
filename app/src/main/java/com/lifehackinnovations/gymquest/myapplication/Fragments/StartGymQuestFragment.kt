@@ -34,6 +34,11 @@ class StartGymQuestFragment : Fragment() {
             (activity as MainActivity).replaceFragment(nextEncounterFragment, R.id.fragment_container)
         }
 
+        myView.addCustomEncounterId.setOnClickListener { myView ->
+            val customEncounterBuilderFragment = CustomEncounterBuilderFragment()
+            (activity as MainActivity).replaceFragment(customEncounterBuilderFragment, R.id.fragment_container)
+        }
+
         return myView
     }
 

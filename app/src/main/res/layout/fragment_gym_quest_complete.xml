@@ -1,0 +1,160 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.GymQuestCompleteFragment">
+
+    <data>
+
+        <variable
+            name="buttonText"
+            type="String" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        tools:background="@color/appBackgroundColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            tools:background="@color/appBackgroundColor">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="226dp"
+                        android:layout_height="126dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/gym_quest_logo" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/garamond_bold"
+                        android:text="@string/complete"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/garamond_bold"
+                        android:text="@string/summary"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/garamond_bold"
+                        android:text="@string/ancient_ruins"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lettergothicstd"
+                        android:text="Total Time 47:45 (New Record)"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lettergothicstd"
+                        android:text="Encounters 16/16"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lettergothicstd"
+                        android:text="Level Ups 1"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lettergothicstd"
+                        android:text="Records Set 1"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lettergothicstd"
+                        android:text="XP Gained 270"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/golden_box"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/shareGymQuestId"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/share_button" />
+
+                <ImageView
+                    android:id="@+id/continueGymQuestId"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/continue_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

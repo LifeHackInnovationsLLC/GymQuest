@@ -25,4 +25,13 @@
     <string name="workout_timer_length">Workout timer length</string>
     <string name="enable_timer_between_sets">Enable timer  between sets?</string>
     <string name="enable_overall_workout_timer">Enable overall  workout timer?</string>
+    <string name="user_input">USER INPUT</string>
+    <string name="all_time_records">ALL TIME RECORDS</string>
+    <string name="complete">COMPLETE!</string>
+    <string name="summary">SUMMARY</string>
+    <string name="ancient_ruins">ANCIENT RUINS</string>
+    <string name="strength">STRENGTH</string>
+    <string name="agility">AGILITY</string>
+    <string name="speed">SPEED</string>
+    <string name="endurance">ENDURANCE</string>
 </resources>

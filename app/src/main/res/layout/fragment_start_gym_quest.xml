@@ -4,7 +4,6 @@
     tools:context=".Fragments.StartGymQuestFragment">
 
     <data>
-
         <variable
             name="buttonText"
             type="String" />
@@ -25,7 +24,7 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -137,45 +136,375 @@
                             android:textSize="36sp" />
                     </RelativeLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="ANCIENT RUINS"
+                            android:textColor="@color/fontColor"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:text="Time"
+                                android:textSize="10sp" />
+
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:text="Reps"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="SETS"
+                            android:textColor="@color/fontColor"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_border">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Exercise Name"
+                                android:textColor="@color/fontColor"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/fab_margin"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:background="@color/whiteColor"
+                                android:text="1" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:background="@color/whiteColor"
+                                android:text="1" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:background="@color/whiteColor"
+                                android:text="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/fab_margin"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:text="-"
+                                android:textColor="@color/fontColor" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:background="@color/whiteColor"
+                                android:text="1" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:text="+"
+                                android:textColor="@color/fontColor" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_border">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Exercise Name"
+                                android:textColor="@color/fontColor"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/fab_margin"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:background="@color/whiteColor"
+                                android:text="1" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:background="@color/whiteColor"
+                                android:text="1" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:background="@color/whiteColor"
+                                android:text="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/fab_margin"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:text="-"
+                                android:textColor="@color/fontColor" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:background="@color/whiteColor"
+                                android:text="1" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:text="+"
+                                android:textColor="@color/fontColor" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_border">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Exercise Name"
+                                android:textColor="@color/fontColor"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/fab_margin"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:background="@color/whiteColor"
+                                android:text="1" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:background="@color/whiteColor"
+                                android:text="1" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:background="@color/whiteColor"
+                                android:text="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/fab_margin"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:text="-"
+                                android:textColor="@color/fontColor" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:background="@color/whiteColor"
+                                android:text="1" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="@dimen/fab_margin_three"
+                                android:text="+"
+                                android:textColor="@color/fontColor" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:id="@+id/addCustomEncounterId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/custom_border">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ADD CUSTOM ENCOUNTER"
+                                android:textColor="@color/fontColor"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:id="@+id/backImageId"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/back_image" />
+
+                            <ImageView
+                                android:id="@+id/setTimeImageId"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/set_timer_image" />
+
+                        </LinearLayout>
+
+                        <include
+                            android:id="@+id/startGymQuestId"
+                            layout="@layout/option_button_style"
+                            bind:buttonText="@{`START GYMQUEST`}" />
+
+                    </LinearLayout>
+
                 </LinearLayout>
 
             </ScrollView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:weightSum="1">
-
-                <ImageView
-                    android:id="@+id/backImageId"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="0.5"
-                    android:src="@drawable/back_image" />
-
-                <ImageView
-                    android:id="@+id/setTimeImageId"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="0.5"
-                    android:src="@drawable/set_timer_image" />
-
-            </LinearLayout>
-
-            <include
-                android:id="@+id/startGymQuestId"
-                layout="@layout/option_button_style"
-                bind:buttonText="@{`START GYMQUEST`}" />
 
         </LinearLayout>
 

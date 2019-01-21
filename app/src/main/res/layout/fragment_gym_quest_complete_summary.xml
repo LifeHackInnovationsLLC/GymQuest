@@ -1,0 +1,346 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.GymQuestCompleteSummaryFragment">
+
+    <data>
+
+        <variable
+            name="buttonText"
+            type="String" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        tools:background="@color/appBackgroundColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            tools:background="@color/appBackgroundColor">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="226dp"
+                        android:layout_height="126dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/gym_quest_logo" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/garamond_bold"
+                        android:text="@string/complete"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/garamond_bold"
+                        android:text="@string/summary"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/garamond_bold"
+                        android:text="@string/ancient_ruins"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lettergothicstd"
+                        android:text="LEVEL: 50"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lettergothicstd"
+                        android:text="CLASS: Class"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutXpPointId"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="@dimen/fab_margin_large"
+                        android:layout_marginEnd="@dimen/fab_margin_large">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/experience_bar"
+                            android:text="XP: 400/266" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/forte_mt"
+                            android:text="XP: 400/266"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/garamond_bold"
+                            android:text="@string/strength"
+                            android:textColor="@color/fontColor"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/experience_bar"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="6/10"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/lettergothicstd"
+                            android:text="237"
+                            android:textAlignment="center"
+                            android:textColor="@color/fontColor"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/garamond_bold"
+                            android:text="@string/agility"
+                            android:textColor="@color/fontColor"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/experience_bar"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="6/10"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/lettergothicstd"
+                            android:text="237"
+                            android:textAlignment="center"
+                            android:textColor="@color/fontColor"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/garamond_bold"
+                            android:text="@string/speed"
+                            android:textColor="@color/fontColor"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/experience_bar"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="6/10"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/lettergothicstd"
+                            android:text="237"
+                            android:textAlignment="center"
+                            android:textColor="@color/fontColor"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/garamond_bold"
+                            android:text="@string/endurance"
+                            android:textColor="@color/fontColor"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/experience_bar"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="6/10"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/lettergothicstd"
+                            android:text="237"
+                            android:textAlignment="center"
+                            android:textColor="@color/fontColor"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/shareGymQuestId"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/share_button" />
+
+                <ImageView
+                    android:id="@+id/continueGymQuestId"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/finish_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

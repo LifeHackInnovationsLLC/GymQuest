@@ -28,7 +28,7 @@ class JourneyDifficultyQuestFragment : Fragment() {
             (activity as MainActivity).replaceFragment(questSelectionFragment, R.id.fragment_container)
         }
 
-        myView.questButtonId.setOnClickListener { view ->
+        myView.questBackButtonId.setOnClickListener { view ->
             (activity as MainActivity).onBackPressed()
         }
 

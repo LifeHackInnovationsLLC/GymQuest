@@ -9,28 +9,23 @@ import android.view.ViewGroup
 import com.lifehackinnovations.gymquest.myapplication.MainActivity
 import com.lifehackinnovations.gymquest.myapplication.MainActivity.Companion.replaceFragment
 import com.lifehackinnovations.gymquest.myapplication.R
-import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentNextEncounterBinding
+import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentGymQuestCompleteBinding
+import com.lifehackinnovations.gymquest.myapplication.databinding.FragmentStartGymQuestBinding
+import kotlinx.android.synthetic.main.fragment_gym_quest_complete.view.*
 import kotlinx.android.synthetic.main.fragment_next_encounter.view.*
+import kotlinx.android.synthetic.main.fragment_start_gym_quest.view.*
 
-class NextEncounterFragment : Fragment() {
+class GymQuestCompleteFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        val binding: FragmentNextEncounterBinding = DataBindingUtil.inflate(inflater,
-                R.layout.fragment_next_encounter,
-                container,
-                false)
+        val binding: FragmentGymQuestCompleteBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_gym_quest_complete, container, false)
         val myView: View = binding.root
 
-        myView.recordImageId.setOnClickListener { myView ->
-            val personalRecordsFragment = PersonalRecordsFragment()
-            (activity as MainActivity).replaceFragment(personalRecordsFragment, R.id.fragment_container)
-        }
-
-        myView.startGymQuestId.setOnClickListener { myView ->
-            val gymQuestCompleteFragment = GymQuestCompleteFragment();
-            (activity as MainActivity).replaceFragment(gymQuestCompleteFragment, R.id.fragment_container)
+        myView.continueGymQuestId.setOnClickListener { myView ->
+            val gymQuestCompleteSummaryFragment = GymQuestCompleteSummaryFragment()
+            (activity as MainActivity).replaceFragment(gymQuestCompleteSummaryFragment, R.id.fragment_container)
         }
 
         return myView

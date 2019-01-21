@@ -18,43 +18,305 @@
         android:orientation="vertical"
         tools:background="@color/appBackgroundColor">
 
-        <TextView
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/garamond_bold"
-            android:text="PERSONAL RECORDS"
-            android:textAlignment="center"
-            android:textColor="@color/fontColor"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:textSize="20sp" />
+            android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:orientation="vertical">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight=".5"
-                android:fontFamily="@font/garamond_bold"
-                android:text="@string/username"
-                android:textAlignment="center"
-                android:textColor="@color/fontColor"
-                android:textSize="20sp" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/garamond_bold"
+                    android:text="PERSONAL RECORDS"
+                    android:textAlignment="center"
+                    android:textColor="@color/fontColor"
+                    android:textSize="20sp" />
 
-            <include
-                android:id="@+id/personalRecordBackId"
-                layout="@layout/option_button_style"
-                bind:buttonText="@{`BACK`}" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
 
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/garamond_bold"
+                        android:text="@string/username"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="20sp" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:background="@drawable/custom_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/lettergothicstd"
+                                android:text="SEARCH:"
+                                android:textColor="@color/fontColor"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:layout_weight="0.5"
+                                android:background="@color/whiteColor"
+                                android:hint="@string/user_input" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_margin_three"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/lettergothicstd"
+                                android:text="SORT BY:"
+                                android:textColor="@color/fontColor"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:layout_weight="0.5"
+                                android:background="@color/whiteColor"
+                                android:hint="Workout types" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/fab_margin_three"
+                        android:fontFamily="@font/garamond_bold"
+                        android:text="@string/all_time_records"
+                        android:textAlignment="center"
+                        android:textColor="@color/fontColor"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:background="@drawable/custom_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:fontFamily="@font/lettergothicstd"
+                                android:text="INCLINE BENCH PRESS:"
+                                android:textColor="@color/fontColor"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:layout_weight="1"
+                                android:background="@color/whiteColor"
+                                android:hint="Reps" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_margin_three"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:fontFamily="@font/lettergothicstd"
+                                android:text="DATE ENTERED:"
+                                android:textColor="@color/fontColor"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:layout_weight="1"
+                                android:background="@color/whiteColor"
+                                android:hint="LBs" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:layout_marginTop="@dimen/fab_margin_three"
+                        android:background="@drawable/custom_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:fontFamily="@font/lettergothicstd"
+                                android:text="INCLINE BENCH PRESS:"
+                                android:textColor="@color/fontColor"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:layout_weight="1"
+                                android:background="@color/whiteColor"
+                                android:hint="Reps" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_margin_three"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:fontFamily="@font/lettergothicstd"
+                                android:text="DATE ENTERED:"
+                                android:textColor="@color/fontColor"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:layout_weight="1"
+                                android:background="@color/whiteColor"
+                                android:hint="LBs" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:layout_marginTop="@dimen/fab_margin_three"
+                        android:background="@drawable/custom_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:fontFamily="@font/lettergothicstd"
+                                android:text="INCLINE BENCH PRESS:"
+                                android:textColor="@color/fontColor"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:layout_weight="1"
+                                android:background="@color/whiteColor"
+                                android:hint="Reps" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_margin_three"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:fontFamily="@font/lettergothicstd"
+                                android:text="DATE ENTERED:"
+                                android:textColor="@color/fontColor"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:layout_weight="1"
+                                android:background="@color/whiteColor"
+                                android:hint="LBs" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <include
+                        android:id="@+id/personalRecordBackId"
+                        layout="@layout/option_button_style"
+                        bind:buttonText="@{`BACK`}" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
 
     </LinearLayout>
 

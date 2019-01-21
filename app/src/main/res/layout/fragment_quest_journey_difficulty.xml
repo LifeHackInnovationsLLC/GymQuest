@@ -268,7 +268,7 @@
             android:orientation="vertical">
 
             <include
-                android:id="@+id/questButtonId"
+                android:id="@+id/questBackButtonId"
                 layout="@layout/option_button_style"
                 bind:buttonText="@{`BACK`}" />
 
