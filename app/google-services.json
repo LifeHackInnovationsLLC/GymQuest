@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "135122090935",
+    "firebase_url": "https://gym-quest-230521.firebaseio.com",
+    "project_id": "gym-quest-230521",
+    "storage_bucket": "gym-quest-230521.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135122090935:android:8f37b37507038ed8",
+        "android_client_info": {
+          "package_name": "com.lifehackinnovations.gymquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135122090935-a1dck0aaqmufcgfqjnn4coosrlqka529.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lifehackinnovations.gymquest",
+            "certificate_hash": "170801b5dbfc72cf772572ca617a94b2218c9bad"
+          }
+        },
+        {
+          "client_id": "135122090935-saka5cgciojqkroricq6bu1e09te6r6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_0iylILzHBRV1UcsIVWFrJeNmc-ky1yY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135122090935-saka5cgciojqkroricq6bu1e09te6r6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135122090935:android:28a8ae548f9842cd",
+        "android_client_info": {
+          "package_name": "com.lifehackinnovations.gymquest.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135122090935-de7q51h79umgcibakub6c1fufa4d83lp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lifehackinnovations.gymquest.myapplication",
+            "certificate_hash": "170801b5dbfc72cf772572ca617a94b2218c9bad"
+          }
+        },
+        {
+          "client_id": "135122090935-saka5cgciojqkroricq6bu1e09te6r6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_0iylILzHBRV1UcsIVWFrJeNmc-ky1yY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135122090935-saka5cgciojqkroricq6bu1e09te6r6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
